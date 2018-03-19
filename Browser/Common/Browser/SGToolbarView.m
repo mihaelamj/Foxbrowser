@@ -119,6 +119,11 @@
                                         image:[UIImage imageNamed:@"sync"]
                                        target:self
                                        action:@selector(_showSyncSettings)]];
+  
+  [menuItems addObject:[KxMenuItem menuItem:@"Fillr"
+                                      image:nil
+                                     target:self
+                                     action:@selector(_showFillr)]];
 
     
     CGRect rect = [_browser.view convertRect:sv.bounds fromView:sv];
@@ -126,6 +131,41 @@
     [KxMenu showMenuInView:_browser.view
                   fromRect:rect
                  menuItems:menuItems];
+}
+
+- (void)_showFillr {
+  /*
+   https://psr.slv.vic.gov.au
+   http://zale.sheldoncollege.com//index.php?sid=16591
+   https://www.sail-croatia.com/realex-payment
+   https://www.gpcu.org/Applications/Loan-Payment-Form.aspx
+   https://www.bradford.com.au/onlinepayment.html
+   */
+  
+
+  
+  UIAlertController *alert=[UIAlertController alertControllerWithTitle:@"Fillr Items"
+                                                                message:@"Show test web sites"
+                                                         preferredStyle:UIAlertControllerStyleAlert];
+  NSArray *items = @[@"https://psr.slv.vic.gov.au",
+                    @"http://zale.sheldoncollege.com//index.php?sid=16591",
+                    @"https://www.sail-croatia.com/realex-payment",
+                    @"https://www.gpcu.org/Applications/Loan-Payment-Form.aspx",
+                    @"https://www.bradford.com.au/onlinepayment.html"];
+  int i = 1;
+  for (NSString *item in items) {
+    
+    NSString *name = [NSString stringWithFormat:@"Fillr: %i", i]; i++;
+    UIAlertAction *aButton = [UIAlertAction actionWithTitle:name style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+      NSLog(@"URL: %@", item);
+      //show in a web view URL
+    }];
+    
+    [alert addAction:aButton];
+    
+  }
+
+ [self presentMenuController:alert completion:nil];
 }
 
 - (void)_showBookmarks {

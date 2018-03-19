@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9B795A1205FF54400024D68 /* FillrSDKBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A9B795A0205FF54400024D68 /* FillrSDKBundle.bundle */; };
+		A9B795A4205FF58B00024D68 /* libFillrSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B7959B205FF53400024D68 /* libFillrSDK.a */; };
+		A9B795A6205FF5A700024D68 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B795A5205FF5A700024D68 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F4047E4319E6E6B700D27001 /* DejalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4047E4119E6E6B700D27001 /* DejalActivityView.m */; };
 		F4047E4C19E766D500D27001 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F4047E4B19E766D500D27001 /* UICKeyChainStore.m */; };
 		F406C028195F25A300A84C76 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F406C005195F25A300A84C76 /* NSData+Base64.m */; };
@@ -100,7 +103,41 @@
 		F4FE7F2015B48F8900471BD1 /* SGAddButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FE7F1F15B48F8900471BD1 /* SGAddButton.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A9B7959A205FF53400024D68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9B79593205FF53400024D68 /* FillrSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 21FD5CB71AEF51AE00300809;
+			remoteInfo = FillrSDK;
+		};
+		A9B7959C205FF53400024D68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9B79593205FF53400024D68 /* FillrSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 21FD5CC21AEF51AE00300809;
+			remoteInfo = FillrSDKTests;
+		};
+		A9B7959E205FF53400024D68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9B79593205FF53400024D68 /* FillrSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 211CCA021AF1E2DD00B13FBD;
+			remoteInfo = FillrSDKBundle;
+		};
+		A9B795A2205FF57400024D68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9B79593205FF53400024D68 /* FillrSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 21FD5CB61AEF51AE00300809;
+			remoteInfo = FillrSDK;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		A9B79593205FF53400024D68 /* FillrSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FillrSDK.xcodeproj; path = FillrSDK/FillrSDK.xcodeproj; sourceTree = "<group>"; };
+		A9B795A0205FF54400024D68 /* FillrSDKBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FillrSDKBundle.bundle; path = FillrSDK/FillrSDKBundle.bundle; sourceTree = "<group>"; };
+		A9B795A5205FF5A700024D68 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		BD9CA4ADA7D5460BAA5BBD6D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4047E4019E6E6B700D27001 /* DejalActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DejalActivityView.h; sourceTree = "<group>"; };
 		F4047E4119E6E6B700D27001 /* DejalActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DejalActivityView.m; sourceTree = "<group>"; };
@@ -333,6 +370,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9B795A6205FF5A700024D68 /* WebKit.framework in Frameworks */,
+				A9B795A4205FF58B00024D68 /* libFillrSDK.a in Frameworks */,
 				F4ADE13F19AFC00900A5B380 /* libsqlite3.0.dylib in Frameworks */,
 				F42CC123195652D8005411EA /* CoreGraphics.framework in Frameworks */,
 				F419E75818423E75007EE996 /* AVFoundation.framework in Frameworks */,
@@ -357,6 +396,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9B79594205FF53400024D68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9B7959B205FF53400024D68 /* libFillrSDK.a */,
+				A9B7959D205FF53400024D68 /* FillrSDKTests.xctest */,
+				A9B7959F205FF53400024D68 /* FillrSDKBundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F4047E3E19E6E6B700D27001 /* ext */ = {
 			isa = PBXGroup;
 			children = (
@@ -746,6 +795,8 @@
 		F4FE2C3A159B6C58001B04D7 = {
 			isa = PBXGroup;
 			children = (
+				A9B795A0205FF54400024D68 /* FillrSDKBundle.bundle */,
+				A9B79593205FF53400024D68 /* FillrSDK.xcodeproj */,
 				F406C000195F25A300A84C76 /* FXSync */,
 				F45516E315A47B8A00E0B54E /* External */,
 				F4FE2C4F159B6C58001B04D7 /* Browser */,
@@ -765,6 +816,7 @@
 		F4FE2C48159B6C58001B04D7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A9B795A5205FF5A700024D68 /* WebKit.framework */,
 				F4ADE13E19AFC00900A5B380 /* libsqlite3.0.dylib */,
 				F42CC124195652E3005411EA /* JavaScriptCore.framework */,
 				F4665956194CA6890028DD40 /* libcommonCrypto.dylib */,
@@ -830,6 +882,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A9B795A3205FF57400024D68 /* PBXTargetDependency */,
 			);
 			name = Foxbrowser;
 			productName = Foxbrowser;
@@ -897,12 +950,42 @@
 			mainGroup = F4FE2C3A159B6C58001B04D7;
 			productRefGroup = F4FE2C46159B6C58001B04D7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A9B79594205FF53400024D68 /* Products */;
+					ProjectRef = A9B79593205FF53400024D68 /* FillrSDK.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F4FE2C44159B6C58001B04D7 /* Foxbrowser */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A9B7959B205FF53400024D68 /* libFillrSDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFillrSDK.a;
+			remoteRef = A9B7959A205FF53400024D68 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A9B7959D205FF53400024D68 /* FillrSDKTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FillrSDKTests.xctest;
+			remoteRef = A9B7959C205FF53400024D68 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A9B7959F205FF53400024D68 /* FillrSDKBundle.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FillrSDKBundle.bundle;
+			remoteRef = A9B7959E205FF53400024D68 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F4FE2C43159B6C58001B04D7 /* Resources */ = {
@@ -911,6 +994,7 @@
 			files = (
 				F4B72E871A369BA8000E0753 /* safari.png in Resources */,
 				F4B72E861A369BA8000E0753 /* TUSafariActivity.strings in Resources */,
+				A9B795A1205FF54400024D68 /* FillrSDKBundle.bundle in Resources */,
 				F4BBDD3519E453450078D4AA /* AppiraterLocalizable.strings in Resources */,
 				F4B72E8B1A369BA8000E0753 /* safari~iPad@2x.png in Resources */,
 				F455C5F51A02E74500F49C07 /* Icons.xcassets in Resources */,
@@ -996,6 +1080,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9B795A3205FF57400024D68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FillrSDK;
+			targetProxy = A9B795A2205FF57400024D68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F4B72E671A369BA8000E0753 /* TUSafariActivity.strings */ = {

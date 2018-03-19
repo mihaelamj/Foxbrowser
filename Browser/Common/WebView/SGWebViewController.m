@@ -19,6 +19,9 @@
 #import "NSStringPunycodeAdditions.h"
 #import "GAI.h"
 
+//FILLR
+#import "FillrSDK/Fillr.h"
+
 @implementation SGWebViewController {
     NSDictionary *_selected;
     NJKWebViewProgress *_progressProxy;
@@ -156,6 +159,8 @@
             [self openRequest:nil];
         }
     }
+  
+    [[Fillr sharedInstance] trackWebview:_webView];
 }
 
 - (void)viewDidLayoutSubviews {

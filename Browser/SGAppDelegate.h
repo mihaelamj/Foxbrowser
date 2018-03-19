@@ -13,6 +13,7 @@
 #import <UIKit/UIKit.h>
 #import "AppiraterDelegate.h"
 
+
 @class SGBrowserViewController;
 @protocol GAITracker, AppiraterDelegate;
 
@@ -21,6 +22,7 @@
 @property (strong, nonatomic) UIWindow *window;
 @property (weak, nonatomic) SGBrowserViewController *browserViewController;
 @property (strong, nonatomic) id<GAITracker> tracker;
+  
 
 - (BOOL)canConnectToInternet;
 

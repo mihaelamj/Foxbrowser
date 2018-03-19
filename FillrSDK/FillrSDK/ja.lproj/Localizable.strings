@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  FillrSDK
+
+  Created by Alex Bin Zhao on 17/08/2015.
+  Copyright (c) 2015 Pop Tech Pty. Ltd. All rights reserved.
+*/
+
+"Done" = "完了";
+"Secure Autofill by Fillr" = "Fillr によるセキュアな自動入力";
+"Fillr is the most secure & accurate autofill in the world and it’s free. Setup takes under a minute and you’ll be returned to this page." = "Fillr は世界で最も安全 &amp; 正確な自動入力アプリです。個人データは PIN コードで保護され、Fillr アプリ内で暗号化してから本人のデバイス上にのみ保存されます。セットアップはあっという間で、完了後はこのページが再び表示されます。";
+"Install Fillr autofill and save me time" = "Fillr を無料でインストールして時間を節約";
+"Not now, I'd like to fill this form manually" = "今はせずにフォームを手動で入力する";
+"Use Secure Autofill" = "セキュアな自動入力を使用";
+"Install Fillr" = "ンストールFillr";
+"Not now" = "今はせず";
+"What's this" = "What's this";
+"Install autofill for %@" = "%@ に Autofill をインストール";
+"%@ Autofill by Fillr" = "Fillr による %@ 用 Autofill";
+"Install Fillr, Autofill for %@" = "Fillr と %@ 用 Autofill をインストール";

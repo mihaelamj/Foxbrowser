@@ -23,6 +23,14 @@
 #import "Reachability.h"
 #import "Appirater.h"
 
+//FILLR
+#import "FillrSDK/Fillr.h"
+
+/*
+ App name: FoxbrowserTest Ios f7c4fcaf2687033f31cf5d06a4e5e90690a6c70cd168408a085dff09b1323d52
+ Developer Key:  f3018310222b8a93aa5e1ba706a7d0ad
+ Secret Key:  MzU3ZDU0ZWNhM2JiOWVmZjQ1NjJiNWE=
+ */
 
 
 SGAppDelegate *appDelegate;
@@ -57,7 +65,10 @@ NSString *const kSGDidRunBeforeKey = @"kSGDidRunBeforeKey";
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     _window.restorationIdentifier = NSStringFromClass([UIWindow class]);
     self.window.rootViewController = browser;
-    
+  
+  [[Fillr sharedInstance] initialiseWithDevKey:@"f3018310222b8a93aa5e1ba706a7d0ad" secretKey:@"MzU3ZDU0ZWNhM2JiOWVmZjQ1NjJiNWE=" andUrlScheme:@"org.graetzer.Foxbrowser"];
+//  [fillr setBrowserName:@"Your Browser Name" toolbarBrowserName:@"Your Browser Name"];
+  
     return YES;
 }
 
@@ -161,6 +172,12 @@ viewControllerWithRestorationIdentifierPath:(NSArray *)identifierComponents
         [self.browserViewController addTabWithURLRequest:[NSMutableURLRequest requestWithURL:url] title:sourceApplication];
         return YES;
     }
+  
+  if ([[Fillr sharedInstance] canHandleOpenURL:url]) {
+    [[Fillr sharedInstance] handleOpenURL:url];
+//    return YES;
+  }
+  
     return NO;
 }
 

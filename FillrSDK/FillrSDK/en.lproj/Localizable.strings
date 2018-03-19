@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  FillrSDK
+
+  Created by Alex Bin Zhao on 17/08/2015.
+  Copyright (c) 2015 Pop Tech Pty. Ltd. All rights reserved.
+*/
+
+"Done" = "Done";
+"Cancel" = "Cancel";
+"Secure Autofill by Fillr" = "Secure Autofill by Fillr";
+"Fillr is the most secure & accurate autofill in the world and it’s free. Setup takes under a minute and you’ll be returned to this page." = "Fillr is the most secure & accurate autofill in the world and it’s free. Setup takes under a minute and you’ll be returned to this page.";
+"Install Fillr autofill and save me time" = "Install Fillr autofill and save me time";
+"Not now, I'd like to fill this form manually" = "Not now, I'd like to fill this form manually";
+"Use Secure Autofill" = "Use Secure Autofill";
+"Autofill This Form" = "Autofill This Form";
+"Install Fillr" = "Install Fillr";
+"Not now" = "Not now";
+"What's this" = "What's this";
+"Install autofill for %@" = "Install autofill for %@";
+"%@ Autofill by Fillr" = "%@ Autofill by Fillr";
+"Install Fillr, Autofill for %@" = "Install Fillr, Autofill for %@";
+
+"Tip" = "Tip";
+"You can disable the autofill toolbar in Settings" = "You can disable the autofill toolbar in Settings";
+"Okay" = "Okay";
+
+"Install Autofill for Dolphin" = "Install Autofill for Dolphin";
+"You are about to install the most accurate and secure autofill app Fillr. Continue?" = "You are about to install the most accurate and secure autofill app Fillr. Continue?";

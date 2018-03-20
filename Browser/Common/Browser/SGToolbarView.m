@@ -22,6 +22,8 @@
 #import "TUSafariActivity.h"
 #import "NJKWebViewProgressView.h"
 
+#import "SGWebViewController.h"
+
 @implementation SGToolbarView
 
 - (instancetype)initWithFrame:(CGRect)frame browserDelegate:(SGBrowserViewController *)browser; {
@@ -152,13 +154,13 @@
                     @"https://www.sail-croatia.com/realex-payment",
                     @"https://www.gpcu.org/Applications/Loan-Payment-Form.aspx",
                     @"https://www.bradford.com.au/onlinepayment.html"];
-  int i = 1;
+
   for (NSString *item in items) {
-    
-    NSString *name = [NSString stringWithFormat:@"Fillr: %i", i]; i++;
-    UIAlertAction *aButton = [UIAlertAction actionWithTitle:name style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+    UIAlertAction *aButton = [UIAlertAction actionWithTitle:item style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
       NSLog(@"URL: %@", item);
       //show in a web view URL
+      SGWebViewController *detailVC = [[SGWebViewController alloc] initWithURLString:item];
+      [self presentMenuController:detailVC completion:nil];
     }];
     
     [alert addAction:aButton];

@@ -28,6 +28,30 @@
     BOOL _restoring;
 }
 
+#pragma mark - View Methods
+
+- (id)initWithURLString:(NSString *)urlString
+{
+  self = [super init];
+  if (self) {
+    _urlString = urlString;
+  }
+  return self;
+}
+
+#pragma mark - Private Methods
+
+- (void)showURLString:(NSString *)urlString
+{
+  if (!urlString) {
+    return;
+  }
+  NSURL *url = [NSURL URLWithString:urlString];
+  NSURLRequest *requestURL = [NSURLRequest requestWithURL:url];
+  
+  [self.webView loadRequest:requestURL];
+}
+
 // TODO Allow to change this preferences in the Settings App
 + (void)load {
     // Enable cookies
@@ -134,6 +158,9 @@
     _progressProxy.webViewProxyDelegate = self;
     _progressProxy.progressDelegate = self;
     _webView.delegate = _progressProxy;
+  
+  //show url in web view
+  [self showURLString:self.urlString];
 }
 
 - (void)willMoveToParentViewController:(UIViewController *)parent {

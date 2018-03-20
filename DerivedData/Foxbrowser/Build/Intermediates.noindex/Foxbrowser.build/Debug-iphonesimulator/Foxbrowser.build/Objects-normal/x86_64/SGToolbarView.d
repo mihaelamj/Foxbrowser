@@ -26,4 +26,6 @@ dependencies: \
   /Users/mmj/Developer/me/Foxbrowser/Browser/Common/Search/SGSearchField.h \
   /Users/mmj/Developer/me/Foxbrowser/External/KxMenu/KxMenu.h \
   /Users/mmj/Developer/me/Foxbrowser/External/TUSafariActivity/Classes/TUSafariActivity.h \
-  /Users/mmj/Developer/me/Foxbrowser/External/NJKWebViewProgress/NJKWebViewProgressView.h
+  /Users/mmj/Developer/me/Foxbrowser/External/NJKWebViewProgress/NJKWebViewProgressView.h \
+  /Users/mmj/Developer/me/Foxbrowser/Browser/Common/WebView/SGWebViewController.h \
+  /Users/mmj/Developer/me/Foxbrowser/External/NJKWebViewProgress/NJKWebViewProgress.h

@@ -8,10 +8,10 @@
 	<string>CoreGraphics</string>
 	<string>WebKit</string>
 	<string>Security</string>
-	<string>XCTest</string>
 	<string>netinet</string>
 	<string>sys</string>
 	<string>netinet6</string>
+	<string>XCTest</string>
 	<string>StoreKit</string>
 	<string>UIKit</string>
 	<string>Foundation</string>

@@ -25,6 +25,8 @@
 @property (strong, nonatomic, readonly) UINavigationController *bookmarks;
 
 @property (weak, readonly, nonatomic) SGSearchField *searchField;
+
+@property (readonly, nonatomic) BOOL fillrItemsCreated;
 @property (strong, readonly, nonatomic) SGSearchViewController *searchController;
 
 - (instancetype)initWithFrame:(CGRect)frame browserDelegate:(SGBrowserViewController *)browser;

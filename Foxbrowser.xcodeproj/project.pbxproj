@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9DB64032063321E00CFF044 /* FillrEmbeddedSDKBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A9DB64002063321C00CFF044 /* FillrEmbeddedSDKBundle.bundle */; };
+		A9DB64042063321E00CFF044 /* FillrSDKBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A9DB64012063321D00CFF044 /* FillrSDKBundle.bundle */; };
+		A9DB64052063321E00CFF044 /* libFillrEmbeddedSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DB64022063321D00CFF044 /* libFillrEmbeddedSDK.a */; };
+		A9DB64072063328A00CFF044 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DB64062063328A00CFF044 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A9DB6409206332AD00CFF044 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DB6408206332AD00CFF044 /* CoreFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A9DB640B206332C200CFF044 /* libz.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DB640A206332C200CFF044 /* libz.1.tbd */; };
+		A9DB640D206332D700CFF044 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DB640C206332D700CFF044 /* libicucore.tbd */; };
+		A9DB640F206332E400CFF044 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DB640E206332E400CFF044 /* libsqlite3.0.tbd */; };
 		F4047E4319E6E6B700D27001 /* DejalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4047E4119E6E6B700D27001 /* DejalActivityView.m */; };
 		F4047E4C19E766D500D27001 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F4047E4B19E766D500D27001 /* UICKeyChainStore.m */; };
 		F406C028195F25A300A84C76 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F406C005195F25A300A84C76 /* NSData+Base64.m */; };
@@ -101,6 +109,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A9DB63F42063321C00CFF044 /* DefaultFillProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultFillProvider.h; sourceTree = "<group>"; };
+		A9DB63F62063321C00CFF044 /* FillrAutofillInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FillrAutofillInputAccessoryView.h; sourceTree = "<group>"; };
+		A9DB63F72063321C00CFF044 /* FillrAutofillEbatesCoachmarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FillrAutofillEbatesCoachmarkView.h; sourceTree = "<group>"; };
+		A9DB63F82063321C00CFF044 /* Fillr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fillr.h; sourceTree = "<group>"; };
+		A9DB63F92063321C00CFF044 /* UserAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAddress.h; sourceTree = "<group>"; };
+		A9DB63FA2063321C00CFF044 /* UserTelephoneNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTelephoneNumber.h; sourceTree = "<group>"; };
+		A9DB63FB2063321C00CFF044 /* FillrSDKSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FillrSDKSettingViewController.h; sourceTree = "<group>"; };
+		A9DB63FC2063321C00CFF044 /* UserDataAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDataAccessor.h; sourceTree = "<group>"; };
+		A9DB63FD2063321C00CFF044 /* UserCellPhoneNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCellPhoneNumber.h; sourceTree = "<group>"; };
+		A9DB63FE2063321C00CFF044 /* UserCreditCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCreditCard.h; sourceTree = "<group>"; };
+		A9DB63FF2063321C00CFF044 /* FillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FillViewController.h; sourceTree = "<group>"; };
+		A9DB64002063321C00CFF044 /* FillrEmbeddedSDKBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FillrEmbeddedSDKBundle.bundle; path = "fillr-embedded-sdk-ios-2.0.1/FillrEmbeddedSDKBundle.bundle"; sourceTree = "<group>"; };
+		A9DB64012063321D00CFF044 /* FillrSDKBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FillrSDKBundle.bundle; path = "fillr-embedded-sdk-ios-2.0.1/FillrSDKBundle.bundle"; sourceTree = "<group>"; };
+		A9DB64022063321D00CFF044 /* libFillrEmbeddedSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFillrEmbeddedSDK.a; path = "fillr-embedded-sdk-ios-2.0.1/libFillrEmbeddedSDK.a"; sourceTree = "<group>"; };
+		A9DB64062063328A00CFF044 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		A9DB6408206332AD00CFF044 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		A9DB640A206332C200CFF044 /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
+		A9DB640C206332D700CFF044 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		A9DB640E206332E400CFF044 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		BD9CA4ADA7D5460BAA5BBD6D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4047E4019E6E6B700D27001 /* DejalActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DejalActivityView.h; sourceTree = "<group>"; };
 		F4047E4119E6E6B700D27001 /* DejalActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DejalActivityView.m; sourceTree = "<group>"; };
@@ -333,9 +360,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9DB640F206332E400CFF044 /* libsqlite3.0.tbd in Frameworks */,
+				A9DB640D206332D700CFF044 /* libicucore.tbd in Frameworks */,
+				A9DB640B206332C200CFF044 /* libz.1.tbd in Frameworks */,
+				A9DB6409206332AD00CFF044 /* CoreFoundation.framework in Frameworks */,
+				A9DB64072063328A00CFF044 /* WebKit.framework in Frameworks */,
 				F4ADE13F19AFC00900A5B380 /* libsqlite3.0.dylib in Frameworks */,
 				F42CC123195652D8005411EA /* CoreGraphics.framework in Frameworks */,
 				F419E75818423E75007EE996 /* AVFoundation.framework in Frameworks */,
+				A9DB64052063321E00CFF044 /* libFillrEmbeddedSDK.a in Frameworks */,
 				F4BB5B0C16C32B7F00275E31 /* StoreKit.framework in Frameworks */,
 				F48A732716BFFF8B006B25CB /* CoreData.framework in Frameworks */,
 				F446638816A2E31F00047704 /* Social.framework in Frameworks */,
@@ -357,6 +390,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9DB63F32063321C00CFF044 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A9DB63F42063321C00CFF044 /* DefaultFillProvider.h */,
+				A9DB63F52063321C00CFF044 /* FillrSDK */,
+				A9DB63F92063321C00CFF044 /* UserAddress.h */,
+				A9DB63FA2063321C00CFF044 /* UserTelephoneNumber.h */,
+				A9DB63FB2063321C00CFF044 /* FillrSDKSettingViewController.h */,
+				A9DB63FC2063321C00CFF044 /* UserDataAccessor.h */,
+				A9DB63FD2063321C00CFF044 /* UserCellPhoneNumber.h */,
+				A9DB63FE2063321C00CFF044 /* UserCreditCard.h */,
+				A9DB63FF2063321C00CFF044 /* FillViewController.h */,
+			);
+			name = include;
+			path = "fillr-embedded-sdk-ios-2.0.1/include";
+			sourceTree = "<group>";
+		};
+		A9DB63F52063321C00CFF044 /* FillrSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A9DB63F62063321C00CFF044 /* FillrAutofillInputAccessoryView.h */,
+				A9DB63F72063321C00CFF044 /* FillrAutofillEbatesCoachmarkView.h */,
+				A9DB63F82063321C00CFF044 /* Fillr.h */,
+			);
+			path = FillrSDK;
+			sourceTree = "<group>";
+		};
 		F4047E3E19E6E6B700D27001 /* ext */ = {
 			isa = PBXGroup;
 			children = (
@@ -746,6 +806,10 @@
 		F4FE2C3A159B6C58001B04D7 = {
 			isa = PBXGroup;
 			children = (
+				A9DB64002063321C00CFF044 /* FillrEmbeddedSDKBundle.bundle */,
+				A9DB64012063321D00CFF044 /* FillrSDKBundle.bundle */,
+				A9DB63F32063321C00CFF044 /* include */,
+				A9DB64022063321D00CFF044 /* libFillrEmbeddedSDK.a */,
 				F406C000195F25A300A84C76 /* FXSync */,
 				F45516E315A47B8A00E0B54E /* External */,
 				F4FE2C4F159B6C58001B04D7 /* Browser */,
@@ -765,6 +829,11 @@
 		F4FE2C48159B6C58001B04D7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A9DB640E206332E400CFF044 /* libsqlite3.0.tbd */,
+				A9DB640C206332D700CFF044 /* libicucore.tbd */,
+				A9DB640A206332C200CFF044 /* libz.1.tbd */,
+				A9DB6408206332AD00CFF044 /* CoreFoundation.framework */,
+				A9DB64062063328A00CFF044 /* WebKit.framework */,
 				F4ADE13E19AFC00900A5B380 /* libsqlite3.0.dylib */,
 				F42CC124195652E3005411EA /* JavaScriptCore.framework */,
 				F4665956194CA6890028DD40 /* libcommonCrypto.dylib */,
@@ -919,8 +988,10 @@
 				F44870BC1687E0E700769EA4 /* JSTools.js in Resources */,
 				F4B72E891A369BA8000E0753 /* safari@3x.png in Resources */,
 				F4C6F7CB1A282EE500266392 /* FXSettingsViewController.xib in Resources */,
+				A9DB64042063321E00CFF044 /* FillrSDKBundle.bundle in Resources */,
 				F4D9F83C1A27BBD2003E1D0C /* FXSync.strings in Resources */,
 				F4B72E901A369C24000E0753 /* LICENSE in Resources */,
+				A9DB64032063321E00CFF044 /* FillrEmbeddedSDKBundle.bundle in Resources */,
 				F407FAB617E622D6008179F4 /* Images.xcassets in Resources */,
 				F4FD2B6615ADDB7B005DBAB4 /* Localizable.strings in Resources */,
 				F4C3906C161093D500349AA4 /* Settings.bundle in Resources */,
@@ -1179,8 +1250,12 @@
 					"$(inherited)",
 					"$(SRCROOT)/External/GoogleAnalytics",
 					"$(SDKROOT)/usr/lib/system",
+					"$(PROJECT_DIR)/fillr-embedded-sdk-ios-2.0.1",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lresolv",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1205,8 +1280,12 @@
 					"$(inherited)",
 					"$(SRCROOT)/External/GoogleAnalytics",
 					"$(SDKROOT)/usr/lib/system",
+					"$(PROJECT_DIR)/fillr-embedded-sdk-ios-2.0.1",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lresolv",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

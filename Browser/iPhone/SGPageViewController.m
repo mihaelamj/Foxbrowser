@@ -14,6 +14,8 @@
 #import "SGWebViewController.h"
 #import "SGBlankController.h"
 
+
+
 CGFloat const kSGMinYScale = 0.84;
 CGFloat const kSGMinXScale = 0.84;
 #define SG_EXPOSED_TRANSFORM (CGAffineTransformMakeScale(0.75, 0.8))
@@ -58,6 +60,7 @@ CGFloat const kSGMinXScale = 0.84;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+  
     self.restorationIdentifier = NSStringFromClass([self class]);
     self.view.backgroundColor = [UIColor blackColor];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:NO];

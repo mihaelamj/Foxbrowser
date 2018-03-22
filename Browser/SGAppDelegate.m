@@ -23,7 +23,9 @@
 #import "Reachability.h"
 #import "Appirater.h"
 
-
+//Fillr
+#import "Fillr.h"
+#import "DefaultFillProvider.h"
 
 SGAppDelegate *appDelegate;
 NSString *const kSGEnableStartpageKey = @"org.graetzer.enableStartpage";
@@ -57,8 +59,24 @@ NSString *const kSGDidRunBeforeKey = @"kSGDidRunBeforeKey";
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     _window.restorationIdentifier = NSStringFromClass([UIWindow class]);
     self.window.rootViewController = browser;
+  
+  //FILLR
+  [self initiFillr];
+  
+
     
     return YES;
+}
+
+- (void)initiFillr {
+   Fillr * fillr = [Fillr sharedInstance];
+  [DefaultFillProvider sharedInstance].rootViewController = self.window.rootViewController;
+ 
+  [fillr initialiseWithDevKey:@"bfdb972a0c1df7612246aed68fa81654" secretKey:@"ZTVjZmM4OTk2MzM1MDc0OGVmYmE4ZjY=" andUrlScheme:@"org.graetzer.Foxbrowser"];
+  fillr.fillProvider = [DefaultFillProvider sharedInstance];
+  [fillr setBrowserName:@"Foxbrowser" toolbarBrowserName:@"Foxbrowser"];
+  [fillr setEnabled:YES];
+  [fillr setVisible:YES];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

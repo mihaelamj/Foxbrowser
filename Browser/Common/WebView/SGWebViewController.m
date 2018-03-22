@@ -19,6 +19,10 @@
 #import "NSStringPunycodeAdditions.h"
 #import "GAI.h"
 
+//Fillr
+#import "Fillr.h"
+#import "DefaultFillProvider.h"
+
 @implementation SGWebViewController {
     NSDictionary *_selected;
     NJKWebViewProgress *_progressProxy;
@@ -105,6 +109,9 @@
     __strong UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectZero];
     self.view = webView;
     self.webView = webView;
+  
+  Fillr * fillr = [Fillr sharedInstance];
+  [fillr trackWebview:webView];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -193,6 +200,11 @@ shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherG
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request
   navigationType:(UIWebViewNavigationType)navigationType {
+  
+  if ([[Fillr sharedInstance] canHandleWebViewRequest:request]) {
+    [[Fillr sharedInstance] handleWebViewRequest:request forWebView:webView];
+    return NO;
+  }
     
     NSString *scheme = request.URL.scheme;
     SGBrowserViewController *browser = (SGBrowserViewController *)self.parentViewController;
@@ -217,12 +229,17 @@ shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherG
             _request = request;
         }
     }
+  
+    // Your code goes here afterwards
+    decisionHandler(WKNavigationActionPolicyAllow);
     return YES;
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView {
     _loading = YES;
     [self _dismissSearchToolbar];
+  //Fillr
+    [[Fillr sharedInstance] handleWebViewDidStartLoad:webView];
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
@@ -231,6 +248,9 @@ shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherG
     [webView loadJSTools];
     [webView disableTouchCallout];
     self.title = [webView title];
+  
+  //Fillr
+    [[Fillr sharedInstance] handleWebViewDidFinishLoad:webView];
     
     if (![self.webView.request.URL.scheme isEqualToString:@"file"]) {
         _request = webView.request;

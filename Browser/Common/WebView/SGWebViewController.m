@@ -231,7 +231,7 @@ shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherG
     }
   
     // Your code goes here afterwards
-    decisionHandler(WKNavigationActionPolicyAllow);
+//    decisionHandler(WKNavigationActionPolicyAllow);
     return YES;
 }
 
